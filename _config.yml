@@ -23,9 +23,9 @@ name                     : "Saket Khandelwal"
 description              : "A Blog about my experiences, learnings and activities."
 host                     : "0.0.0.0"
 port                     : 4000
-url                      : https://saket404.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://saket404.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : / # the subpath of your site, e.g. "/blog"
+repository               : "saket404/saket404.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : assets/images/logo.png
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
