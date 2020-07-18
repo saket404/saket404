@@ -15,7 +15,7 @@ category:
   - Python
 share: true
 ---
-Recently I came across [OpenDota](https://www.opendota.com){:target="_blank"} which is an open source platform where you can analyse and visualise you game stats. My goal today is to show you how to setup your opendota account to be able extract data using Python. This can be done with other programming languages but it is particulary useful doing this in Python as you can further perform analysis on your or other pro gamers statitics through the API using various Data Analysis libraries. 
+Recently I came across [OpenDota](https://www.opendota.com){:target="_blank"} which is an open source platform where you can analyse and visualise you game stats. My goal today is to show you how to setup your OpenDota account to be able extract data using Python. This can be done with other programming languages but it is particulary useful doing this in Python as you can further perform analysis on your or other pro gamers statitics through the API using various Data Analysis libraries. 
 
 ### OpenDota API
 ---
@@ -24,7 +24,7 @@ The [OpenDota API](https://www.opendota.com/api-keys){:target="_blank"} is built
 ![OpenDota docs](/assets/images/posts/dota-part1/opendota_docs.png "Open Dota docs")
 
 
-In order to use the OpenDota API to access your stats, you would first need to setup your account to be available on OpenDota platform. This can be done with 2 simple steps. 
+To use the OpenDota API to access your stats, you would first need to setup your account to be available on OpenDota platform. This can be done with 2 simple steps. 
 
 #### Step 1: Sign in on OpenDota
 
@@ -34,7 +34,7 @@ In order to let OpenDota calibrate your stats you will need to go the [OpenDota 
 
 ### Step 2: Retireve Account ID
 
-In order to access your stats through the API we can see it requires an `account_id` which can be easily extracted once you login to the main OpenDota portal using your steam account. Your `account_id` will be seen on the website address which you can easily extract. 
+To access your stats through the API we can see it requires an `account_id` which can be easily extracted once you login to the main OpenDota portal using your steam account. Your `account_id` will be seen on the website address which you can easily extract. 
 
 ![OpenDota docs](/assets/images/posts/dota-part1/steamID.png "Open Dota docs")
 
