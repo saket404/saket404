@@ -60,7 +60,8 @@ df.head(10)
 Output:
 ![dataframe](/assets/images/posts/dota-part1/dataAPI.png)
 
-Voilà!, you have access to all your game stats now. There are a vast amount of endpoints you can utilise to extract data which can be read about in the documentation. \
+Voilà!, you have access to all your game stats now. There are a vast amount of endpoints you can utilise to extract data which can be read about in the documentation.
+
 Happy coding, Cheers!
 
 
