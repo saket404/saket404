@@ -22,9 +22,9 @@ I love 🙋‍♂️:
  - leading a healthy lifestyle 😜
 
 I am fluent in:
- - Hindi 🇮🇳
- - English 🏴󠁧󠁢󠁥󠁮󠁧󠁿
- - Thai 🇹🇭
+ - Hindi 
+ - English 
+ - Thai 
 
 
 I have/am studied/studying  👨‍🎓:
