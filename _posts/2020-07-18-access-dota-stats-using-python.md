@@ -50,7 +50,7 @@ link = 'https://api.opendota.com/api/players/98166081/matches'
 r = requests.get(link)
 data = json.loads(r.text)
 ```
-The code above extracts data regarding all the matches played by me from the `matches` endpoint ([docs here](https://docs.opendota.com/#tag/players%2Fpaths%2F~1players~1%7Baccount_id%7D~1matches%2Fget){:target="_blank"}). Given the response is a JSON I used `json` library to parse the data into JSON format. I always use `pandas` to manipulate data most of the time, just because how easy the library usage is. 
+The code above extracts data regarding all the matches played by me from the `matches` endpoint ([docs here](https://docs.opendota.com/#tag/players%2Fpaths%2F~1players~1%7Baccount_id%7D~1matches%2Fget){:target="_blank"}). Given the response is a JSON I used `json` library to parse the data into JSON format. I always use `pandas` to manipulate data, just because how easy the library usage is and the abundance of features it provides. 
 
 ```python
 import pandas as pd
