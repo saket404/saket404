@@ -20,7 +20,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content=" ">
 <meta property="og:title" content="Access Dota game statistics using Python">
-<meta property="og:url" content="http://0.0.0.0:4000/python/acess-dota-stats-using-python/">
+<meta property="og:url" content="http://0.0.0.0:4000/python/access-dota-stats-using-python/">
 
 
   <meta property="og:description" content="Learn how to access your Dota 2 statistics using OpenDota API with Python.">
@@ -46,7 +46,7 @@
   
 
 
-<link rel="canonical" href="http://0.0.0.0:4000/python/acess-dota-stats-using-python/">
+<link rel="canonical" href="http://0.0.0.0:4000/python/access-dota-stats-using-python/">
 
 
 
@@ -104,6 +104,13 @@
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
 <!-- end custom head snippets -->
 
@@ -346,7 +353,7 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Recently I came across <a href="https://www.opendota.com" target="_blank">OpenDota</a> which is an open source platform where you can analyse and visualise you game stats. My goal today is to show you how to setup your opendota account to be able extract data using Python. This can be done with other programming languages but it is particulary useful doing this in Python as you can further perform analysis on your or other pro gamers statitics through the API using various Data Analysis libraries.</p>
+        <p>Recently I came across <a href="https://www.opendota.com" target="_blank">OpenDota</a> which is an open source platform where you can analyse and visualise you game stats. My goal today is to show you how to setup your OpenDota account to be able extract data using Python. This can be done with other programming languages but it is particulary useful doing this in Python as you can further perform analysis on your or other pro gamers statitics through the API using various Data Analysis libraries.</p>
 
 <h3 id="opendota-api">OpenDota API</h3>
 <hr />
@@ -354,7 +361,7 @@
 
 <p><img src="/assets/images/posts/dota-part1/opendota_docs.png" alt="OpenDota docs" title="Open Dota docs" /></p>
 
-<p>In order to use the OpenDota API to access your stats, you would first need to setup your account to be available on OpenDota platform. This can be done with 2 simple steps.</p>
+<p>To use the OpenDota API to access your stats, you would first need to setup your account to be available on OpenDota platform. This can be done with 2 simple steps.</p>
 
 <h4 id="step-1-sign-in-on-opendota">Step 1: Sign in on OpenDota</h4>
 
@@ -364,7 +371,7 @@
 
 <h3 id="step-2-retireve-account-id">Step 2: Retireve Account ID</h3>
 
-<p>In order to access your stats through the API we can see it requires an <code class="language-plaintext highlighter-rouge">account_id</code> which can be easily extracted once you login to the main OpenDota portal using your steam account. Your <code class="language-plaintext highlighter-rouge">account_id</code> will be seen on the website address which you can easily extract.</p>
+<p>To access your stats through the API we can see it requires an <code class="language-plaintext highlighter-rouge">account_id</code> which can be easily extracted once you login to the main OpenDota portal using your steam account. Your <code class="language-plaintext highlighter-rouge">account_id</code> will be seen on the website address which you can easily extract.</p>
 
 <p><img src="/assets/images/posts/dota-part1/steamID.png" alt="OpenDota docs" title="Open Dota docs" /></p>
 
@@ -379,17 +386,23 @@
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div></div>
-<p>The code above extracts data regarding all the matches played by me from the <code class="language-plaintext highlighter-rouge">matches</code> endpoint (<a href="https://docs.opendota.com/#tag/players%2Fpaths%2F~1players~1%7Baccount_id%7D~1matches%2Fget" target="_blank">docs here</a>). Given the response is a JSON I used <code class="language-plaintext highlighter-rouge">json</code> library to parse the data into JSON format. I always use <code class="language-plaintext highlighter-rouge">pandas</code> to manipulate data most of the time, just because how easy the library usage is.</p>
+<p>The code above extracts data regarding all the matches played by me from the <code class="language-plaintext highlighter-rouge">matches</code> endpoint (<a href="https://docs.opendota.com/#tag/players%2Fpaths%2F~1players~1%7Baccount_id%7D~1matches%2Fget" target="_blank">docs here</a>). There are a vast amount of endpoints you can utilise to extract data which can be read about in the documentation. Given the response is a JSON I used <code class="language-plaintext highlighter-rouge">json</code> library to parse the data into JSON format. I always use <code class="language-plaintext highlighter-rouge">pandas</code> to manipulate data, just because how easy the library usage is and the abundance of features it provides.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <span class="n">df</span><span class="p">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </code></pre></div></div>
-<p>Output:
-<img src="/assets/images/posts/dota-part1/dataAPI.png" alt="dataframe" /></p>
+<p>Voilà!, you have access to all your game stats now.</p>
 
-<p>Voilà!, you have access to all your game stats now. There are a vast amount of endpoints you can utilise to extract data which can be read about in the documentation. <br />
-Happy coding, Cheers!</p>
+<p>Output:</p>
+
+<p><img src="/assets/images/posts/dota-part1/dataAPI.png" alt="dataframe" /></p>
+
+<hr />
+<iframe src="https://giphy.com/embed/zcCGBRQshGdt6" width="480" height="308" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<p><a href="https://giphy.com/gifs/reaction-office-space-that-was-easy-zcCGBRQshGdt6">via GIPHY</a></p>
+
+<p>Happy Coding, Cheers!</p>
 
 
         
@@ -457,11 +470,11 @@ Happy coding, Cheers!</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Access+Dota+game+statistics+using+Python%20http%3A%2F%2F0.0.0.0%3A4000%2Fpython%2Facess-dota-stats-using-python%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Access+Dota+game+statistics+using+Python%20http%3A%2F%2F0.0.0.0%3A4000%2Fpython%2Faccess-dota-stats-using-python%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fpython%2Facess-dota-stats-using-python%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fpython%2Faccess-dota-stats-using-python%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fpython%2Facess-dota-stats-using-python%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fpython%2Faccess-dota-stats-using-python%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -589,8 +602,8 @@ Happy coding, Cheers!</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://0.0.0.0:4000/python/acess-dota-stats-using-python/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/python/acess-dota-stats-using-python"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://0.0.0.0:4000/python/access-dota-stats-using-python/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/python/access-dota-stats-using-python"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

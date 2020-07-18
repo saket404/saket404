@@ -50,20 +50,23 @@ link = 'https://api.opendota.com/api/players/98166081/matches'
 r = requests.get(link)
 data = json.loads(r.text)
 ```
-The code above extracts data regarding all the matches played by me from the `matches` endpoint ([docs here](https://docs.opendota.com/#tag/players%2Fpaths%2F~1players~1%7Baccount_id%7D~1matches%2Fget){:target="_blank"}). Given the response is a JSON I used `json` library to parse the data into JSON format. I always use `pandas` to manipulate data, just because how easy the library usage is and the abundance of features it provides. 
+The code above extracts data regarding all the matches played by me from the `matches` endpoint ([docs here](https://docs.opendota.com/#tag/players%2Fpaths%2F~1players~1%7Baccount_id%7D~1matches%2Fget){:target="_blank"}). There are a vast amount of endpoints you can utilise to extract data which can be read about in the documentation. Given the response is a JSON I used `json` library to parse the data into JSON format. I always use `pandas` to manipulate data, just because how easy the library usage is and the abundance of features it provides. 
 
 ```python
 import pandas as pd
 df = pd.DataFrame(data)
 df.head(10)
 ```
+Voilà!, you have access to all your game stats now.
+
 Output:
+
 ![dataframe](/assets/images/posts/dota-part1/dataAPI.png)
 
-Voilà!, you have access to all your game stats now. There are a vast amount of endpoints you can utilise to extract data which can be read about in the documentation.
+---
+<iframe src="https://giphy.com/embed/zcCGBRQshGdt6" width="480" height="308" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reaction-office-space-that-was-easy-zcCGBRQshGdt6">via GIPHY</a></p>
 
-Happy coding, Cheers!
-
+Happy Coding, Cheers!
 
 
 

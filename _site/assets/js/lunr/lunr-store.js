@@ -6,8 +6,8 @@ var store = [{
         "teaser": null
       },{
         "title": "Access Dota game statistics using Python",
-        "excerpt":"Recently I came across OpenDota which is an open source platform where you can analyse and visualise you game stats. My goal today is to show you how to setup your opendota account to be able extract data using Python. This can be done with other programming languages but it...","categories": ["Python"],
+        "excerpt":"Recently I came across OpenDota which is an open source platform where you can analyse and visualise you game stats. My goal today is to show you how to setup your OpenDota account to be able extract data using Python. This can be done with other programming languages but it...","categories": ["Python"],
         "tags": ["Python","Dota","Guide"],
-        "url": "http://0.0.0.0:4000/python/acess-dota-stats-using-python/",
+        "url": "http://0.0.0.0:4000/python/access-dota-stats-using-python/",
         "teaser": null
       }]
