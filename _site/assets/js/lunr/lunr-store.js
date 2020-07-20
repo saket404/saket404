@@ -10,4 +10,10 @@ var store = [{
         "tags": ["Python","Dota","Guide"],
         "url": "http://0.0.0.0:4000/python/access-dota-stats-using-python/",
         "teaser": null
+      },{
+        "title": "Remote SSH using Visual Studio Code",
+        "excerpt":"When working on a development project in the tech field, you often interact with remote servers. I ofen used to face difficulties in moving files and connecting to remote servers on Windows or Mac OS then I came across Visual Studio Code Remote - SSH. In this post I will...","categories": ["Ssh"],
+        "tags": ["Ssh","Vscode"],
+        "url": "http://0.0.0.0:4000/ssh/ssh-using-vscode/",
+        "teaser": null
       }]

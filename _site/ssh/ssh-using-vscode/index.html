@@ -9,29 +9,35 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Posts by Year -</title>
-<meta name="description" content="A Blog about my experiences, learnings and activities.">
+<!-- begin _includes/seo.html --><title>Remote SSH using Visual Studio Code -</title>
+<meta name="description" content="Learn how and why to use Vscode for connecting to remote servers">
 
 
   <meta name="author" content="Saket Khandelwal">
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content=" ">
-<meta property="og:title" content="Posts by Year">
-<meta property="og:url" content="http://0.0.0.0:4000/posts/">
+<meta property="og:title" content="Remote SSH using Visual Studio Code">
+<meta property="og:url" content="http://0.0.0.0:4000/ssh/ssh-using-vscode/">
 
 
-  <meta property="og:description" content="A Blog about my experiences, learnings and activities.">
-
-
-
+  <meta property="og:description" content="Learn how and why to use Vscode for connecting to remote servers">
 
 
 
+  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/posts/ssh/1.png">
 
 
+
+
+
+  <meta property="article:published_time" content="2020-07-20T00:00:00+10:00">
+
+
+
+  <meta property="article:modified_time" content="2020-07-20T00:00:00+10:00">
 
 
 
@@ -40,7 +46,7 @@
   
 
 
-<link rel="canonical" href="http://0.0.0.0:4000/posts/">
+<link rel="canonical" href="http://0.0.0.0:4000/ssh/ssh-using-vscode/">
 
 
 
@@ -110,7 +116,7 @@
 
   </head>
 
-  <body class="layout--posts">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -171,6 +177,47 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/assets/images/posts/ssh/1.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Remote SSH using Visual Studio Code
+
+        
+      </h1>
+      
+        <p class="page__lead">Learn how and why to use Vscode for connecting to remote servers
+</p>
+      
+      
+        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+
+</p>
+      
+      
+      
+    </div>
+  
+  
+</div>
+
+
 
 
 
@@ -295,64 +342,185 @@
 
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title">Posts by Year</h1>
-    
-    
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Remote SSH using Visual Studio Code">
+    <meta itemprop="description" content="Learn how and why to use Vscode for connecting to remote servers">
+    <meta itemprop="datePublished" content="2020-07-20T00:00:00+10:00">
+    <meta itemprop="dateModified" content="2020-07-20T00:00:00+10:00">
 
-
-<ul class="taxonomy__index">
-  
-  
-    <li>
-      <a href="#2020">
-        <strong>2020</strong> <span class="taxonomy__count">3</span>
-      </a>
-    </li>
-  
-</ul>
-
-
-
-  <section id="2020" class="taxonomy__section">
-    <h2 class="archive__subtitle">2020</h2>
-    <div class="entries-list">
+    <div class="page__inner-wrap">
       
+
+      <section class="page__content" itemprop="text">
         
+        <p>When working on a development project in the tech field, you often interact with remote servers. I ofen used to face difficulties in moving files and connecting to remote servers on Windows or Mac OS then I came across <a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank"><strong>Visual Studio Code Remote - SSH</strong></a>. In this post I will show you how to connect to a remote server using SSH with Vscode and move files easily between your local computer and the remote server.</p>
+
+<p>From Vscode docs:</p>
+<blockquote>
+  <p>The Visual Studio Code Remote - SSH extension allows you to open a remote folder on any remote machine, virtual machine, or container with a running SSH server and take full advantage of VS Code’s feature set. Once connected to a server, you can interact with files and folders anywhere on the remote filesystem.</p>
+</blockquote>
+
+<p><img src="/assets/images/posts/ssh/official.png" alt="image-center" class="align-center" /></p>
+
+<p><sup><strong>Source</strong>: <a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank">Vscode docs</a>.</sup></p>
+
+<p>I have created an instance on my univeristy’s (unimelb) cloud platform as illustrated in the figure below. I will be using the <code class="language-plaintext highlighter-rouge">test</code> instance for today where we will connect to the instance using vscode remote ssh. I have setup the instance with my public ssh key.</p>
+<blockquote class="notice--info">
+  <p><strong>Note:</strong>
+You can use any cloud platform as the basics would be the same. You would need your public key on the remote server (under authorized keys)</p>
+</blockquote>
+
+<p><img src="/assets/images/posts/ssh/0.png" alt="dashboard" title="University of Melbourne Research Cloud" /></p>
+
+<hr />
+
+<h3 id="ssh-with-vscode">SSH with Vscode</h3>
+<p>At this stage, I assume you have an instance you want to connect and your public key resides on the server gaining you acess to it. Now using vscode to connect to the server can be done in 3 simple steps as shown below.</p>
+
+<h4 id="step-1-install-extension">Step 1: Install extension</h4>
+<p>You have to first install the vscode extension for remote-ssh. You can do so by search for <code class="language-plaintext highlighter-rouge">ssh</code> in the extensions and installing the extension as shown below.</p>
+
+<p><img src="/assets/images/posts/ssh/1.png" alt="install" /></p>
+
+<h4 id="step-2-add-host-to-ssh-config">Step 2: Add host to ssh config</h4>
+<p>Once the extension has been installed an icon will be pop up on the left side menu where you can establish a new connection to a remote server (host) as shown below.</p>
+
+<p><img src="/assets/images/posts/ssh/2.png" alt="host" /></p>
+
+<p>Now click on add new host and enter the ssh command for connecting to the remote server and pointing to your ssh key. Choose the config file you want to add the host to.</p>
+
+<p><img src="/assets/images/posts/ssh/3.png" alt="connect" /></p>
+
+<h4 id="step-3-connect-to-host">Step 3: Connect to host</h4>
+<p>The remote server (host) should be added to the list. In order to connect you an right-click and choose from the options based on you preference.</p>
+
+<p><img src="/assets/images/posts/ssh/6.png" alt="choose" /></p>
+
+<p>Done! you can now connect your remote server and use its terminal in vscode.</p>
+
+<p><img src="/assets/images/posts/ssh/5.png" alt="done" /></p>
+
+<hr />
+
+<h3 id="moving-files">Moving files</h3>
+<p>One of the great features of this extension is not requiring the use of another tool to move files between the remote server and your local machine.</p>
+
+<h4 id="uploading-files-to-remote-server">Uploading files to remote server</h4>
+<p>Uploading files to remote servers can be easily done by simply dragging files to the vscode ui (under ssh) as shown below.</p>
+
+<p><img src="/assets/images/posts/ssh/move1.gif" alt="png-up" /></p>
+
+<h4 id="downloading-files-from-remote-server">Downloading files from remote server</h4>
+<p>Downloading files from remote servers can be easily done too by simply right-clicking and choosing download from the vscode ui as shown below.</p>
+
+<p><img src="/assets/images/posts/ssh/download.gif" alt="png-up" /></p>
+
+<hr />
+
+<iframe src="https://giphy.com/embed/3o7btNa0RUYa5E7iiQ" width="480" height="480" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<p><a href="https://giphy.com/gifs/latenightseth-boom-3o7btNa0RUYa5E7iiQ">via GIPHY</a></p>
+
+<p>You can check out additional features from the docs (<a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank">link here</a>).</p>
+
+<p>Happy remote coding!</p>
 
 
+        
+      </section>
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
     
-    <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/ssh/ssh-using-vscode/" rel="permalink">Remote SSH using Visual Studio Code
-</a>
       
-    </h2>
+      <a href="/tags/#ssh" class="page__taxonomy-item" rel="tag">Ssh</a><span class="sep">, </span>
     
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  2 minute read
-
-</p>
+      
+      
+      <a href="/tags/#vscode" class="page__taxonomy-item" rel="tag">Vscode</a>
     
-    <p class="archive__item-excerpt" itemprop="description">Learn how and why to use Vscode for connecting to remote servers
-</p>
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#ssh" class="page__taxonomy-item" rel="tag">Ssh</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-07-20">July 20, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Remote+SSH+using+Visual+Studio+Code%20http%3A%2F%2F0.0.0.0%3A4000%2Fssh%2Fssh-using-vscode%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fssh%2Fssh-using-vscode%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fssh%2Fssh-using-vscode%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/python/access-dota-stats-using-python/" class="pagination--pager" title="Access Dota game statistics using Python
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
   </article>
-</div>
 
-      
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
         
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -376,12 +544,12 @@
   </article>
 </div>
 
-      
         
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -405,14 +573,13 @@
   </article>
 </div>
 
-      
+        
+      </div>
     </div>
-    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
-  </section>
-
-
-  </div>
+  
+  
 </div>
+
     </div>
 
     
@@ -475,6 +642,25 @@
 <script src="/assets/js/lunr/lunr-en.js"></script>
 
 
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://0.0.0.0:4000/ssh/ssh-using-vscode/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/ssh/ssh-using-vscode"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://saket404.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
 
 
 

@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-07-18T16:04:04+10:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html"> </title><subtitle>A Blog about my experiences, learnings and activities.</subtitle><author><name>Saket Khandelwal</name></author><entry><title type="html">Access Dota game statistics using Python</title><link href="http://0.0.0.0:4000/python/access-dota-stats-using-python/" rel="alternate" type="text/html" title="Access Dota game statistics using Python" /><published>2020-07-18T00:00:00+10:00</published><updated>2020-07-18T00:00:00+10:00</updated><id>http://0.0.0.0:4000/python/access-dota-stats-using-python</id><content type="html" xml:base="http://0.0.0.0:4000/python/access-dota-stats-using-python/">&lt;p&gt;Recently I came across &lt;a href=&quot;https://www.opendota.com&quot; target=&quot;_blank&quot;&gt;OpenDota&lt;/a&gt; which is an open source platform where you can analyse and visualise you game stats. My goal today is to show you how to setup your OpenDota account to be able extract data using Python. This can be done with other programming languages but it is particulary useful doing this in Python as you can further perform analysis on your or other pro gamers statitics through the API using various Data Analysis libraries.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-07-20T10:04:16+10:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html"> </title><subtitle>A Blog about my experiences, learnings and activities.</subtitle><author><name>Saket Khandelwal</name></author><entry><title type="html">Remote SSH using Visual Studio Code</title><link href="http://0.0.0.0:4000/ssh/ssh-using-vscode/" rel="alternate" type="text/html" title="Remote SSH using Visual Studio Code" /><published>2020-07-20T00:00:00+10:00</published><updated>2020-07-20T00:00:00+10:00</updated><id>http://0.0.0.0:4000/ssh/ssh-using-vscode</id><content type="html" xml:base="http://0.0.0.0:4000/ssh/ssh-using-vscode/">&lt;p&gt;When working on a development project in the tech field, you often interact with remote servers. I ofen used to face difficulties in moving files and connecting to remote servers on Windows or Mac OS then I came across &lt;a href=&quot;https://code.visualstudio.com/docs/remote/ssh&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Visual Studio Code Remote - SSH&lt;/strong&gt;&lt;/a&gt;. In this post I will show you how to connect to a remote server using SSH with Vscode and move files easily between your local computer and the remote server.&lt;/p&gt;
+
+&lt;p&gt;From Vscode docs:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The Visual Studio Code Remote - SSH extension allows you to open a remote folder on any remote machine, virtual machine, or container with a running SSH server and take full advantage of VS Code’s feature set. Once connected to a server, you can interact with files and folders anywhere on the remote filesystem.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/official.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;&lt;strong&gt;Source&lt;/strong&gt;: &lt;a href=&quot;https://code.visualstudio.com/docs/remote/ssh&quot; target=&quot;_blank&quot;&gt;Vscode docs&lt;/a&gt;.&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;I have created an instance on my univeristy’s (unimelb) cloud platform as illustrated in the figure below. I will be using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test&lt;/code&gt; instance for today where we will connect to the instance using vscode remote ssh. I have setup the instance with my public ssh key.&lt;/p&gt;
+&lt;blockquote class=&quot;notice--info&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;
+You can use any cloud platform as the basics would be the same. You would need your public key on the remote server (under authorized keys)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/0.png&quot; alt=&quot;dashboard&quot; title=&quot;University of Melbourne Research Cloud&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;ssh-with-vscode&quot;&gt;SSH with Vscode&lt;/h3&gt;
+&lt;p&gt;At this stage, I assume you have an instance you want to connect and your public key resides on the server gaining you acess to it. Now using vscode to connect to the server can be done in 3 simple steps as shown below.&lt;/p&gt;
+
+&lt;h4 id=&quot;step-1-install-extension&quot;&gt;Step 1: Install extension&lt;/h4&gt;
+&lt;p&gt;You have to first install the vscode extension for remote-ssh. You can do so by search for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh&lt;/code&gt; in the extensions and installing the extension as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/1.png&quot; alt=&quot;install&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-2-add-host-to-ssh-config&quot;&gt;Step 2: Add host to ssh config&lt;/h4&gt;
+&lt;p&gt;Once the extension has been installed an icon will be pop up on the left side menu where you can establish a new connection to a remote server (host) as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/2.png&quot; alt=&quot;host&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now click on add new host and enter the ssh command for connecting to the remote server and pointing to your ssh key. Choose the config file you want to add the host to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/3.png&quot; alt=&quot;connect&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-3-connect-to-host&quot;&gt;Step 3: Connect to host&lt;/h4&gt;
+&lt;p&gt;The remote server (host) should be added to the list. In order to connect you an right-click and choose from the options based on you preference.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/6.png&quot; alt=&quot;choose&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Done! you can now connect your remote server and use its terminal in vscode.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/5.png&quot; alt=&quot;done&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;moving-files&quot;&gt;Moving files&lt;/h3&gt;
+&lt;p&gt;One of the great features of this extension is not requiring the use of another tool to move files between the remote server and your local machine.&lt;/p&gt;
+
+&lt;h4 id=&quot;uploading-files-to-remote-server&quot;&gt;Uploading files to remote server&lt;/h4&gt;
+&lt;p&gt;Uploading files to remote servers can be easily done by simply dragging files to the vscode ui (under ssh) as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/move1.gif&quot; alt=&quot;png-up&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;downloading-files-from-remote-server&quot;&gt;Downloading files from remote server&lt;/h4&gt;
+&lt;p&gt;Downloading files from remote servers can be easily done too by simply right-clicking and choosing download from the vscode ui as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/ssh/download.gif&quot; alt=&quot;png-up&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;iframe src=&quot;https://giphy.com/embed/3o7btNa0RUYa5E7iiQ&quot; width=&quot;480&quot; height=&quot;480&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/latenightseth-boom-3o7btNa0RUYa5E7iiQ&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can check out additional features from the docs (&lt;a href=&quot;https://code.visualstudio.com/docs/remote/ssh&quot; target=&quot;_blank&quot;&gt;link here&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Happy remote coding!&lt;/p&gt;</content><author><name>Saket Khandelwal</name></author><category term="[&quot;Ssh&quot;]" /><category term="Ssh" /><category term="Vscode" /><summary type="html">Learn how and why to use Vscode for connecting to remote servers</summary></entry><entry><title type="html">Access Dota game statistics using Python</title><link href="http://0.0.0.0:4000/python/access-dota-stats-using-python/" rel="alternate" type="text/html" title="Access Dota game statistics using Python" /><published>2020-07-18T00:00:00+10:00</published><updated>2020-07-18T00:00:00+10:00</updated><id>http://0.0.0.0:4000/python/access-dota-stats-using-python</id><content type="html" xml:base="http://0.0.0.0:4000/python/access-dota-stats-using-python/">&lt;p&gt;Recently I came across &lt;a href=&quot;https://www.opendota.com&quot; target=&quot;_blank&quot;&gt;OpenDota&lt;/a&gt; which is an open source platform where you can analyse and visualise you game stats. My goal today is to show you how to setup your OpenDota account to be able extract data using Python. This can be done with other programming languages but it is particulary useful doing this in Python as you can further perform analysis on your or other pro gamers statitics through the API using various Data Analysis libraries.&lt;/p&gt;
 
 &lt;h3 id=&quot;opendota-api&quot;&gt;OpenDota API&lt;/h3&gt;
 &lt;hr /&gt;
