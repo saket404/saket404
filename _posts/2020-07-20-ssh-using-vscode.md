@@ -16,6 +16,10 @@ share: true
 ---
 When working on a development project in the tech field, you often interact with remote servers. I ofen used to face difficulties in moving files and connecting to remote servers on Windows or Mac OS then I came across [**Visual Studio Code Remote - SSH**](https://code.visualstudio.com/docs/remote/ssh){:target='_blank'}. In this post I will show you how to connect to a remote server using SSH with Vscode and move files easily between your local computer and the remote server.
 
+Content:
+- [Connect SSH with Vscode](#ssh-with-vscode)
+- [Moving files with Vscode between local and remote](#moving-files)
+
 From Vscode docs:
 >The Visual Studio Code Remote - SSH extension allows you to open a remote folder on any remote machine, virtual machine, or container with a running SSH server and take full advantage of VS Code's feature set. Once connected to a server, you can interact with files and folders anywhere on the remote filesystem.
 
