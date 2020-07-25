@@ -54,7 +54,7 @@ Now click on add new host and enter the ssh command for connecting to the remote
 ![connect](/assets/images/posts/ssh/3.png)
 
 #### Step 3: Connect to host
-The remote server (host) should be added to the list. In order to connect you an right-click and choose from the options based on you preference. 
+The remote server (host) should be added to the list. In order to connect you can right-click and choose from the options based on you preference. 
 
 ![choose](/assets/images/posts/ssh/6.png)
 
