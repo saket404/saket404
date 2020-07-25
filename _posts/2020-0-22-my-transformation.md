@@ -2,8 +2,8 @@
 layout: single
 title: "My Body and Lifestyle Transformation"
 excerpt: "My transformation and what I learnt from it."
-date: 2020-07-24
-last_modified_at: 2020-07-24
+date: 2020-07-25
+last_modified_at: 2020-07-25
 header:
   overlay_image: /assets/images/posts/body/overlay.jpg
   overlay_filter: 0.8
@@ -12,6 +12,8 @@ tags:
   - weigthloss
   - fitness
   - lifestyle
+  - beforeandafter
+  - motivation
 category:
   - fitness
 share: true
