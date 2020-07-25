@@ -62,7 +62,7 @@ I also was one of the people who love the idea of putting minimal effort and get
 
 I was never a skinny kid nor an obese kid growing up. My relationship with food was unhealthy with a junk food obsession and running away from veggies type. During those years I did not really think about what a healthy lifestyle meant, at that age who does? But I used to play a lot of sports and engage in physical activities often which may have been the reason I was not obese. 
 
-It was during high school (9th grade) where I had surgery and was prescribed 4 months complete bed rest post-surgery. My diet remaining the same but with minimal activity my weight increased significantly. Even post-surgery after I went back to school life, I was still restricted from playing sports for 1-2 years. My lifestyle became more sedentary and I was spending more of my time around gadgets. In addition to a sub-standard eating lifestyle consisting of highly-processed food most of the time my health was deteriorating.   
+It was during high school (9th grade) where I had a **major eye surgery** and was prescribed 4 months complete bed rest post-surgery. My diet remaining the same but with minimal activity my weight increased significantly. Even post-surgery after I went back to school life, I was still restricted from playing sports for 1-2 years. My lifestyle became more sedentary and I was spending more of my time around gadgets. In addition to a sub-standard eating lifestyle consisting of highly-processed food most of the time my health was deteriorating.   
 
 {% include gallery id="gallery" caption="Pre and Post Surgery photos" %}
 
