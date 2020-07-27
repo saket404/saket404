@@ -19,7 +19,7 @@ var store = [{
       },{
         "title": "My Body and Lifestyle Transformation",
         "excerpt":"In theory, losing weight is straightforward. Still many people including me struggle with it. Just because it’s a simple theory that doesn’t make it easy. Like many, my body transformation was a roller coaster ride with multiple fluctuations in my weight gain and multiple failed attempts at trying to lose...","categories": ["fitness"],
-        "tags": ["transformation","weigthloss","fitness","lifestyle"],
+        "tags": ["transformation","weigthloss","fitness","lifestyle","beforeandafter","motivation"],
         "url": "http://0.0.0.0:4000/fitness/my-transformation/",
         "teaser": null
       }]

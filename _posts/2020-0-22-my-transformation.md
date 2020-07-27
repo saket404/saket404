@@ -97,12 +97,10 @@ However, this time I decided to change my approach completely and decided to foc
 {% include gallery id="gallery-weight" caption="" %}
 
 #### 2020
-
 Probably the best shape I have been in both mentally and physically. Shockingly started seeing abs!
-
-<img src="/assets/images/posts/body/best.jpg" alt="Physique 2020" width="200" height="200" align="right">
-
-<!-- {% include figure image_path="" alt="Physique 2020" caption="" %} -->
+<figure style="width: 30%" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/body/best.jpg" alt="Physique 2020">
+</figure> 
 
 My lifestyle changed completely:
 -       Started being an early bird. (waking up at 5am)
@@ -112,7 +110,7 @@ My lifestyle changed completely:
 
 My future goals are enjoying and maintaining my healthy lifestyle, while my fitness goals are probably to gain a more muscular physique. My journey has been rough, but I learnt a lot. Here are several key learnings I picked up during this transformation journey. 
 
-<br><br>
+<br><br><br>
 
 ---
 
@@ -140,15 +138,17 @@ To be honest, thinking back that party did not matter as it did not really affec
 
 ##### 5. Measure your food
 
-<img src="/assets/images/posts/body/walnut.jpeg" alt="Weighing Food" width="200" height="200" align="right">
+<figure style="width: 25%" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/body/walnut.jpeg" alt="Physique 2020">
+</figure> 
 
 This is more towards certain fitness goals you have set. For example, you would need to eat less or more depending on if you are cutting or bulking. Measuring your food comes in really handy as you have precise information of how much you are putting in your body. Food volume with respect to their calories can be deceiving and we may not be able to really estimate it. 
 
 Once I started tracking my meals by weighing, I saw how much I actually ate compared to what my estimates were when I was not weighing my food. It was quite surprising seeing how off I was with my estimates compared to how much [macros](https://www.healthline.com/nutrition/how-to-count-macros#macros){:target='_blank'} the food were actually worth. 
 
-For example, I used to like snacking on walnuts. The amount of walnuts (on the right) I would just estimate it to around 15g before, turns out they are actually 30g (100 calories more!).
+For example, I used to like snacking on walnuts. The amount of walnuts (on the right) I would just estimate it to around 15g before, turns out they are actually 30g (around 100 calories more!).
 
-
+<br>
 
 ##### 6. Don’t give up on the food you love
 
