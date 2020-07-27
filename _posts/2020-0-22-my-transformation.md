@@ -23,11 +23,6 @@ gallery:
       image_path: /assets/images/posts/body/skinny.jpeg
     - url: /assets/images/posts/body/2010.jpg
       image_path: /assets/images/posts/body/2010.jpg
-gallery-2014:
-    - url: /assets/images/posts/body/2014.jpg
-      image_path: /assets/images/posts/body/2014.jpg
-    - url: /assets/images/posts/body/2014-1.jpeg
-      image_path: /assets/images/posts/body/2014-1.jpeg
 gallery-2018:
     - url: /assets/images/posts/body/2018.jpeg
       image_path: /assets/images/posts/body/2018.jpeg
@@ -71,7 +66,9 @@ I think many of you must have at least set a New Year’s resolution once, I did
 
 I decided I will start engaging more in physical activity and follow a healthier diet by cutting out junk food. It all went down the drain with the eating lifestyle I promised myself to indulge in. However, I still did keep the physical engagement promise throughout the year. As a result, I did lose weight and it could be observed from my photos but I was not getting any healthier with the same frequent runs to the doctor (allergies, cold etc.).  
 
-{% include gallery id="gallery-2014" caption="Senior Year (Grade 12)" %}
+<div>
+<img src="/assets/images/posts/body/2014.jpg" alt="Senior Year (Grade 12)" width="500" height="500"/>
+</div>
 
 ### Realization
 In 2014, I started my undergrad chapter pursuing my degree in Computer Engineering. The situation took a downfall. My physical activity engagement was down to zero, my eating habits got a lot worse. I used to stay up late most nights (3-4 am) which ended up in me devouring more food than I should eat. My life at that time consisted of sitting at the desk for a long period of time eating, studying and playing. This continued for over 2 years. I started to hate being in photos with my full body exposed, I despised myself while looking in the mirror and It was hard for me to find clothes that did not make me look obese. My body started giving signs as I suffered the occasional back pain and regular allergies. 
