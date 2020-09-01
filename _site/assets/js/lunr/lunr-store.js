@@ -22,4 +22,10 @@ var store = [{
         "tags": ["transformation","weigthloss","fitness","lifestyle","beforeandafter","motivation"],
         "url": "http://0.0.0.0:4000/fitness/my-transformation/",
         "teaser": null
+      },{
+        "title": "Experience as a Data Science Intern",
+        "excerpt":"2020 has been a roller coaster ride (up until now) for many individuals including me too. There still some fruitful experiences which I salvaged from the ride. I wanted to take the time to share one of those experiences here. My experience as a Data Science Research Intern at Melbourne...","categories": ["Career"],
+        "tags": ["Data Science","Internship","Technology"],
+        "url": "http://0.0.0.0:4000/career/my-internship-experience/",
+        "teaser": null
       }]

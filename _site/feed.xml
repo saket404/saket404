@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-07-28T08:15:35+10:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html"> </title><subtitle>A Blog about my experiences, learnings and activities.</subtitle><author><name>Saket Khandelwal</name></author><entry><title type="html">My Body and Lifestyle Transformation</title><link href="http://0.0.0.0:4000/fitness/my-transformation/" rel="alternate" type="text/html" title="My Body and Lifestyle Transformation" /><published>2020-07-25T00:00:00+10:00</published><updated>2020-07-25T00:00:00+10:00</updated><id>http://0.0.0.0:4000/fitness/my-transformation</id><content type="html" xml:base="http://0.0.0.0:4000/fitness/my-transformation/">&lt;figure class=&quot;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-01T20:27:50+10:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html"> </title><subtitle>A Blog about my experiences, learnings and activities.</subtitle><author><name>Saket Khandelwal</name></author><entry><title type="html">Experience as a Data Science Intern</title><link href="http://0.0.0.0:4000/career/my-internship-experience/" rel="alternate" type="text/html" title="Experience as a Data Science Intern" /><published>2020-08-31T00:00:00+10:00</published><updated>2020-08-31T00:00:00+10:00</updated><id>http://0.0.0.0:4000/career/my-internship-experience</id><content type="html" xml:base="http://0.0.0.0:4000/career/my-internship-experience/">&lt;p&gt;2020 has been a roller coaster ride (up until now) for many individuals including me too. There still some fruitful experiences which I salvaged from the ride. I wanted to take the time to share one of those experiences here. My experience as a Data Science Research Intern at Melbourne Data Analytics Platform (MDAP).&lt;/p&gt;
+
+&lt;p&gt;To be honest, what triggered my decision to share my internship experience was not my direct desire to write about it. It was because of an observation I made about by myself with the current projects I have been working on. My approach to how I tackle these projects have completely changed (in a great way) compared to how I used to be prior to the internship. When I pondered about it, I concluded it was because of the learnings I picked up during my internship.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My objective is to share actionable learnings and suggestions from a wonderful experience. Without further ado, let’s get into it.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;background&quot;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;As a student possessing a passion for data science trying to break into the field, I enrolled in the Master of Data Science coursework at the University of Melbourne. Upon the completion of my first year in the course, I had taken a few statistics, data analytics, and computer science subjects. While I found many of these courses intriguing and enlightening, I always wondered about the practical applications in the real-world of the knowledge I have picked up through these courses. To clarify my doubts and to have a clearer view of what kind of work a career in data science entails, I underwent a 3-month internship at Melbourne Data Analytics Platform (MDAP) as a data science intern.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-mdap&quot;&gt;What is MDAP?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mdap.unimelb.edu.au&quot; target=&quot;_blank&quot;&gt;Melbourne Data Analytics Platform&lt;/a&gt; (MDAP) is an organisation part of the University of Melbourne, working to enable data-intensive research across the disciplines by bringing expertise in data-intensive research, computation, and related infrastructure with the goal of increasing University of Melbourne’s capability for innovative, impactful and data-intensive research.&lt;/p&gt;
+
+&lt;p&gt;Additional Information:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mdap.unimelb.edu.au/#tab30&quot; target=&quot;_blank&quot;&gt;Collaborations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mdap.unimelb.edu.au/2020/07/27/shaping-the-future-of-data-intensive-research/&quot; target=&quot;_blank&quot;&gt;Digital Broshure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My role&lt;/h3&gt;
+
+&lt;p&gt;I worked as a Data Science Intern collaborating with researchers to help enable data-intensive research. I was lucky to be able to work on multiple research projects from different domains. My projects included ‘analysing 6 billion social media posts to gain insights on gendered hate speech and domestic violence’, ‘developing a natural language processing pipeline to automatically extract information from legal judgements’, and ‘building an end-to-end web application’. The versatility in the projects I worked on enabled me to gain insight about data science applications in various fields.&lt;/p&gt;
+
+&lt;h3 id=&quot;learnings&quot;&gt;Learnings&lt;/h3&gt;
+
+&lt;p&gt;Now that you have an idea about my organization and role, I would like to shed some light on the most important part of this journey, my learnings. There is no doubt that I walked away from this internship with a significant enhancement of my data science skillset across both technical and soft skills. I would like to share a few of those learnings which I feel have been proven to be pivotal in the way how I approach problems in general.&lt;/p&gt;
+
+&lt;h5 id=&quot;beginners-mindset&quot;&gt;Beginners Mindset&lt;/h5&gt;
+
+&lt;p&gt;In an &lt;a href=&quot;https://www.creativehuddle.co.uk/how-to-adopt-a-beginners-mindset&quot; target=&quot;_blank&quot;&gt;article&lt;/a&gt; by CreativeHuddle they referred to a concept of the curse of knowledge from the book Made of Stick:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Once we know something, we find it hard to imagine what it was like not to know it. Our knowledge has ‘cursed’ us. And it becomes difficult for us to share our knowledge with others because we can’t readily re-create our listeners’ state of mind.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think this is really an interesting and right-on spot concept. I do believe everyone has once given our prior expertise and knowledge in a certain area find it difficult to observe things objectively. Looking back at myself, I used to be overconfident at times which mostly brought me to harm more than good. Observing my supervisors at MDAP made me realise to cope with this problem adopting a beginner’s mindset is important.&lt;/p&gt;
+
+&lt;p&gt;What this means is being able to admit you lack the knowledge in the area, seeking out for help, and not being afraid to make mistakes. This way we always keep ourselves in the path of constant growth throughout our career.&lt;/p&gt;
+
+&lt;h5 id=&quot;ask-questions&quot;&gt;Ask Questions&lt;/h5&gt;
+
+&lt;p&gt;Asking questions or seeking out for help is probably one of the best ways to boost personal growth. You will be amazed at how many people do genuinely want to provide assistance to other people when sought after. I used to hesitate to ask questions due to the fear of turning out to be wrong or just out of embarrassment that it would be a “dumb” question and I think many people do too.
+Working at MDAP surrounded by brilliant people, I found out that seeking help not only enlightened me but also improved my efficiency of performing any task. When I started at MDAP, I was overwhelmed with the abundance of information and was finding It difficult to keep up in my initial days. However, once I mustered up my courage and sought for help, I found out that it improved my efficiency to solve problems as just a pointer in the right direction by someone who has knowledge of that problem saves you a lot of time.&lt;/p&gt;
+
+&lt;h5 id=&quot;real-world-problems-are-unstructured&quot;&gt;Real-World problems are unstructured&lt;/h5&gt;
+
+&lt;p&gt;This learning is probably more oriented toward data science. During studies, you are typically given project problems which you know have a solution to. You instantly know that if you are not able to solve it then you are doing something wrong. However, this is not the case in academia or industry. There are a plethora of challenges you face which are nothing like at what you expect at uni. Real-world problems are mostly unstructured and complex. 
+Your mindset to solve the following problems must be different, you can’t just dive in and start implementing like you would on your uni assignments. I mean you could, but it would do more harm than good. It’s always a better idea to spend time on defining the problem and get to its root. Engaging in the discussion, seeking out suggestions and planning are probably the best ways to approach them.&lt;/p&gt;
+
+&lt;h3 id=&quot;to-conclude&quot;&gt;To Conclude&lt;/h3&gt;
+
+&lt;p&gt;There is still an abundance of other learnings I picked up during my time like, how crucial communication skills are, or how learning constantly is important to keep up etc. But the three learnings I elaborated above I feel are one which has impacted me the most in a positive way. I would also encourage anyone who is reading to take into consideration of incorporating these learnings if they have not been doing so.&lt;/p&gt;
+
+&lt;p&gt;I would also like to acknowledge and compliment how the whole MDAP team always been supportive and helped me grow. Up until now, I have accomplished a lot, made a lot of mistakes and learnt from them, but I still have a long path ahead. My goals for this year are to complete my degree and secure employment in the data science field to further develop my skills and experience.&lt;/p&gt;
+
+&lt;p&gt;I would like to sign off with a quote from one of my supervisors.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Sucess is actually having the courage of working for something you are passionate about.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Stay Safe! Stay Healthy!&lt;/p&gt;</content><author><name>Saket Khandelwal</name></author><category term="[&quot;Career&quot;]" /><category term="Data Science" /><category term="Internship" /><category term="Technology" /><summary type="html">Actionable learnings from my data science internship at MDAP</summary></entry><entry><title type="html">My Body and Lifestyle Transformation</title><link href="http://0.0.0.0:4000/fitness/my-transformation/" rel="alternate" type="text/html" title="My Body and Lifestyle Transformation" /><published>2020-07-25T00:00:00+10:00</published><updated>2020-07-25T00:00:00+10:00</updated><id>http://0.0.0.0:4000/fitness/my-transformation</id><content type="html" xml:base="http://0.0.0.0:4000/fitness/my-transformation/">&lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/posts/body/overlay.jpg&quot; alt=&quot;My Body transformation&quot; /&gt;
   
     &lt;figcaption&gt;
