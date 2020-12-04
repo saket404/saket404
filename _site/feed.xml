@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-01T20:27:50+10:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html"> </title><subtitle>A Blog about my experiences, learnings and activities.</subtitle><author><name>Saket Khandelwal</name></author><entry><title type="html">Experience as a Data Science Intern</title><link href="http://0.0.0.0:4000/career/my-internship-experience/" rel="alternate" type="text/html" title="Experience as a Data Science Intern" /><published>2020-08-31T00:00:00+10:00</published><updated>2020-08-31T00:00:00+10:00</updated><id>http://0.0.0.0:4000/career/my-internship-experience</id><content type="html" xml:base="http://0.0.0.0:4000/career/my-internship-experience/">&lt;p&gt;2020 has been a roller coaster ride (up until now) for many individuals including me too. There still some fruitful experiences which I salvaged from the ride. I wanted to take the time to share one of those experiences here. My experience as a Data Science Research Intern at Melbourne Data Analytics Platform (MDAP).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-12-05T10:39:08+11:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html"> </title><subtitle>A Blog about my experiences, learnings and activities.</subtitle><author><name>Saket Khandelwal</name></author><entry><title type="html">How to set yourself up for a productive day</title><link href="http://0.0.0.0:4000/blog/setup-productiveday/" rel="alternate" type="text/html" title="How to set yourself up for a productive day" /><published>2020-12-05T00:00:00+11:00</published><updated>2020-12-05T00:00:00+11:00</updated><id>http://0.0.0.0:4000/blog/setup-productiveday</id><content type="html" xml:base="http://0.0.0.0:4000/blog/setup-productiveday/">&lt;p&gt;&lt;strong&gt;“2020”&lt;/strong&gt;, Hm. Should be enough to explain the whole roller coaster of a ride it has been for everybody. A lot has changed. The whole “new normal” paradigm shift which has caused havoc. Even before all this happened, getting a productive day in was hard now it’s even harder. I would like to share some tips I use  to set myself up for a productive day.&lt;/p&gt;
+
+&lt;h4 id=&quot;get-adequate-sleep&quot;&gt;Get adequate sleep.&lt;/h4&gt;
+
+&lt;p&gt;This is probably the most important factor out of the lot. No matter what else you do, if one doesn’t get adequate sleep, the whole day goes away in a frustrating manner. I find myself just fudgeling when I work sleep deprived. So get sufficient amount of sleep.&lt;/p&gt;
+
+&lt;h4 id=&quot;complete-your-daily-tasks-ahead&quot;&gt;Complete your daily tasks ahead&lt;/h4&gt;
+
+&lt;p&gt;This might vary among individuals. I find that getting my chores done early before starting my work helps me stay productive throughout the day because I have less things to worry about. Believe me you don’t want to work while a nagging voice in your head keeps reminding you of a lingering tasks (chores) lying around for you to do.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://giphy.com/embed/MRqaXgJUl9fGE1PSy6&quot; width=&quot;480&quot; height=&quot;341&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/MRqaXgJUl9fGE1PSy6&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;shut-off-distractions&quot;&gt;Shut off Distractions&lt;/h4&gt;
+
+&lt;p&gt;In order to be productive, you need to be concentrated on what you are working on. Distractions would just make focusing that hard. Social media is probably a prevailing distraction with how addicted it makes us towards it, with the constant desire of scrolling through Facebook, Instagram, WhatsApp etc. Muting or switching them off is a good idea to avoid distractions. Only for people who don’t actually use Social media for work though.&lt;/p&gt;
+
+&lt;p&gt;I like to switch off (mute) them completely. I find it helps me discard the annoying voice in my head which tells me to check my phone. Another thing people do is make an announcement on their social media about them being offline for a set period of time which also helps as you have just committed to doing something.&lt;/p&gt;
+
+&lt;h4 id=&quot;set-up-a-to-do-list&quot;&gt;Set up a To-Do list&lt;/h4&gt;
+
+&lt;p&gt;Setting up a To-Do list which lists all your tasks to be completed for the day is a great way to keep track and be organized. To be honest being organized is a plus for me, the main reason I set up To-Do list is because of the great deal of satisfaction it brings when you cross out tasks from the list. I find myself more motivated in doing so.&lt;/p&gt;
+
+&lt;p&gt;I use the Microsoft To-Do to create the list just because I have a windows (OS) set up and I find it aesthetic.&lt;/p&gt;
+
+&lt;div&gt;
+&lt;img src=&quot;/assets/images/posts/productive/todo.PNG&quot; alt=&quot;TO-DO list&quot; width=&quot;200&quot; height=&quot;200&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;establish-a-reward&quot;&gt;Establish a reward&lt;/h4&gt;
+
+&lt;p&gt;There is nothing more fulfilling than enjoying a treat after a productive workday. Setting a reward for yourself at the end of the day after completing work is also a good way to keep you motivated while working so you know that there is a treat waiting for you on the other end. I will leave the deciding on the treat to you.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://giphy.com/embed/Sw7STaofv4xfiZxbKW&quot; width=&quot;480&quot; height=&quot;270&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/drunkhistory-comedy-central-drunk-history-Sw7STaofv4xfiZxbKW&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;dont-over-do&quot;&gt;Don’t Over do&lt;/h4&gt;
+
+&lt;p&gt;Lastly, don’t go too hard on yourself. There will be days where you just can’t be productive enough, which is perfectly normal. This happens too often to me, even more during the whole lockdown phase. Dust the unproductive day off, start again tomorrow.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Stay Safe! Stay Productive!&lt;/p&gt;</content><author><name>Saket Khandelwal</name></author><category term="[&quot;Blog&quot;]" /><category term="Productivity" /><category term="Work" /><summary type="html">Tips I use to effectively get in a productive day.</summary></entry><entry><title type="html">Experience as a Data Science Intern</title><link href="http://0.0.0.0:4000/career/my-internship-experience/" rel="alternate" type="text/html" title="Experience as a Data Science Intern" /><published>2020-08-31T00:00:00+10:00</published><updated>2020-08-31T00:00:00+10:00</updated><id>http://0.0.0.0:4000/career/my-internship-experience</id><content type="html" xml:base="http://0.0.0.0:4000/career/my-internship-experience/">&lt;p&gt;2020 has been a roller coaster ride (up until now) for many individuals including me too. There still some fruitful experiences which I salvaged from the ride. I wanted to take the time to share one of those experiences here. My experience as a Data Science Research Intern at Melbourne Data Analytics Platform (MDAP).&lt;/p&gt;
 
 &lt;p&gt;To be honest, what triggered my decision to share my internship experience was not my direct desire to write about it. It was because of an observation I made about by myself with the current projects I have been working on. My approach to how I tackle these projects have completely changed (in a great way) compared to how I used to be prior to the internship. When I pondered about it, I concluded it was because of the learnings I picked up during my internship.&lt;/p&gt;
 

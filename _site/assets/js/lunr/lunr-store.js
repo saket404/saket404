@@ -28,4 +28,10 @@ var store = [{
         "tags": ["Data Science","Internship","Technology"],
         "url": "http://0.0.0.0:4000/career/my-internship-experience/",
         "teaser": null
+      },{
+        "title": "How to set yourself up for a productive day",
+        "excerpt":"“2020”, Hm. Should be enough to explain the whole roller coaster of a ride it has been for everybody. A lot has changed. The whole “new normal” paradigm shift which has caused havoc. Even before all this happened, getting a productive day in was hard now it’s even harder. I...","categories": ["Blog"],
+        "tags": ["Productivity","Work"],
+        "url": "http://0.0.0.0:4000/blog/setup-productiveday/",
+        "teaser": null
       }]
